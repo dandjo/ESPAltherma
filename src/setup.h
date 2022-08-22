@@ -15,7 +15,7 @@
 #define MQTT_PASSWORD ""//leave empty if not set (bad!)
 #define MQTT_PORT 1883
 
-#define FREQUENCY 30000 //query values every 30 sec
+#define FREQUENCY 5000 //query values every 5 sec
 
 #if defined(ARDUINO_M5Stick_C) || defined(ARDUINO_M5Stick_C_Plus)
 //Values used when **M5StickC** or **M5STickCPlus** environment is selected:
@@ -53,8 +53,8 @@
 //#define JSONTABLE
 
 //Uncomment this if you want to activate the One Value <-> One Topic mode. Each value will be sent to a specific topic below 
-// #define ONEVAL_ONETOPIC
-// #define MQTT_OneTopic "espaltherma/OneATTR/" //Keep the ending "/" !!
+#define ONEVAL_ONETOPIC
+#define MQTT_OneTopic "espaltherma/attr/" //Keep the ending "/" !!
 
 
 //Uncomment *ONE* of the following according to your installation.
@@ -79,7 +79,7 @@
 //#include "def/ALTHERMA(LT_11-16KW_HYDROSPLIT_HYDRO_UNIT).h"
 //#include "def/ALTHERMA(LT_CA_CB_04-08KW).h"
 //#include "def/ALTHERMA(LT_CA_CB_11-16KW).h"
-//#include "def/ALTHERMA(LT_DA_04-08KW).h"
+#include "def/ALTHERMA(LT_DA_04-08KW).h"
 //#include "def/ALTHERMA(LT_DA_PAIR_BML).h"
 //#include "def/ALTHERMA(LT_GAS_INJ)20200702.h"
 //#include "def/ALTHERMA(LT_MULTI_DHWHP).h"
