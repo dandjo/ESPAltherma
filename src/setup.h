@@ -10,7 +10,7 @@
 //#define WIFI_PRIMARY_DNS 8, 8, 8, 8     //optional
 //#define WIFI_SECONDARY_DNS 8, 8, 4, 4   //optional
 
-#define MQTT_SERVER "192.168.1.4"//**IP address here of your MQTT server**
+#define MQTT_SERVER "homepi.lan"//**IP address here of your MQTT server**
 #define MQTT_USERNAME ""//leave empty if not set (bad!)
 #define MQTT_PASSWORD ""//leave empty if not set (bad!)
 #define MQTT_PORT 1883
@@ -31,12 +31,12 @@
 
 //Smart grid control - Optional:
 //Uncomment and set to enable SG mqtt functions
-//#define PIN_SG1 32// Pin connected to dry contact SG 1 relay (normally open)
-//#define PIN_SG2 33// Pin connected to dry contact SG 2 relay (normally open)
+#define PIN_SG1 32// Pin connected to dry contact SG 1 relay (normally open)
+#define PIN_SG2 33// Pin connected to dry contact SG 2 relay (normally open)
 // Define if your SG relay board is Low or High triggered (signal pins)
 // Only uncomment one of them
-#define SG_RELAY_HIGH_TRIGGER
-//#define SG_RELAY_LOW_TRIGGER
+//#define SG_RELAY_HIGH_TRIGGER
+#define SG_RELAY_LOW_TRIGGER
 
 // DO NOT CHANGE: Defines the SG active/inactive relay states, according to the definition of the trigger status
 #if defined(SG_RELAY_LOW_TRIGGER)
@@ -54,7 +54,7 @@
 
 //Uncomment this if you want to activate the One Value <-> One Topic mode. Each value will be sent to a specific topic below 
 #define ONEVAL_ONETOPIC
-#define MQTT_OneTopic "espaltherma/attr/" //Keep the ending "/" !!
+#define MQTT_OneTopic "espaltherma/OneATTR/" //Keep the ending "/" !!
 
 
 //Uncomment *ONE* of the following according to your installation.
