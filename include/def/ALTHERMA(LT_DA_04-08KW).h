@@ -86,7 +86,7 @@ LabelDef PROGMEM labelDefs[] = {
 //{0x21,18,105,1,-1,"Not in use"},
 //{0x00,0,995,1,-1,"NextDataGrid"},
 {0x30,0,152,1,-1,"INV frequency (rps)"},
-//{0x30,1,152,1,-1,"INV frequency 2 (rps)"},
+{0x30,1,152,1,-1,"INV frequency 2 (rps)"},
 //{0x30,0,307,1,-1,"STD Compressor 1"},
 //{0x30,0,306,1,-1,"STD Compressor 2"},
 {0x30,0,211,1,-1,"Fan 1 (10 rpm)"},
