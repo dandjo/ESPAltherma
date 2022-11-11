@@ -59,7 +59,7 @@ LabelDef PROGMEM labelDefs[] = {
 {0x20,0,105,2,1,"Outdoor air temp.(R1T)"},
 //{0x20,2,105,2,1,"O/U Heat Exch. Temp."},
 {0x20,4,105,2,1,"Discharge pipe temp."},
-{0x20,6,105,2,1,"Suction pipe temp."},
+//{0x20,6,105,2,1,"Suction pipe temp."},
 {0x20,8,105,2,1,"Heat exchanger mid-temp."},
 //{0x20,10,105,2,1,"Liquid pipe temp.(R6T)"},
 //{0x20,12,105,2,1,"Heat sink temp."},
