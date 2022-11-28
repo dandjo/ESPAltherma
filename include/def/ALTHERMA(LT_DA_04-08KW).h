@@ -180,7 +180,7 @@ LabelDef PROGMEM labelDefs[] = {
 //{0x62,8,303,1,-1,"Tank preheat ON/OFF"},
 //{0x62,8,302,1,-1,"Circulation pump operation"},
 //{0x62,8,301,1,-1,"Alarm output"},
-{0x62,8,300,1,-1,"Space H Operation output"},
+//{0x62,8,300,1,-1,"Space H Operation output"},
 {0x62,9,105,2,-1,"Flow sensor (l/min)"},
 {0x62,11,105,1,2,"Water pressure"},
 {0x62,12,152,1,-1,"Water pump signal (0:max-100:stop)"},
