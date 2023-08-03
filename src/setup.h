@@ -15,7 +15,7 @@
 #define MQTT_PASSWORD ""//leave empty if not set (bad!)
 #define MQTT_PORT 1883
 
-#define FREQUENCY 5000 //query values every 5 sec
+#define FREQUENCY 2000 //query values every 2 sec
 
 #if defined(ARDUINO_M5Stick_C) || defined(ARDUINO_M5Stick_C_Plus)
 //Values used when **M5StickC** or **M5STickCPlus** environment is selected:
@@ -53,8 +53,8 @@
 //#define JSONTABLE
 
 //Uncomment this if you want to activate the One Value <-> One Topic mode. Each value will be sent to a specific topic below 
-#define ONEVAL_ONETOPIC
-#define MQTT_OneTopic "espaltherma/OneATTR/" //Keep the ending "/" !!
+//#define ONEVAL_ONETOPIC
+//#define MQTT_OneTopic "espaltherma/OneATTR/" //Keep the ending "/" !!
 
 
 //Uncomment *ONE* of the following according to your installation.
