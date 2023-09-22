@@ -10,12 +10,12 @@
 //#define WIFI_PRIMARY_DNS 8, 8, 8, 8     //optional
 //#define WIFI_SECONDARY_DNS 8, 8, 4, 4   //optional
 
-#define MQTT_SERVER "homepi.lan"//**IP address here of your MQTT server**
+#define MQTT_SERVER "homepi.domotics.lan"//**IP address here of your MQTT server**
 #define MQTT_USERNAME ""//leave empty if not set (bad!)
 #define MQTT_PASSWORD ""//leave empty if not set (bad!)
 #define MQTT_PORT 1883
 
-#define FREQUENCY 2000 //query values every 2 sec
+#define FREQUENCY 3000 //query values every 3 sec
 
 #if defined(ARDUINO_M5Stick_C) || defined(ARDUINO_M5Stick_C_Plus)
 //Values used when **M5StickC** or **M5STickCPlus** environment is selected:
@@ -57,7 +57,7 @@
 //#define MQTT_OneTopic "espaltherma/OneATTR/" //Keep the ending "/" !!
 
 //Uncomment to disable common frequent log messages via MQTT to reduce network load
-//#define DISABLE_LOG_MESSAGES
+#define DISABLE_LOG_MESSAGES
 
 
 //Uncomment *ONE* of the following according to your installation.
