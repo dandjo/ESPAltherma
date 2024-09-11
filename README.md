@@ -35,7 +35,7 @@ _If this project has any value for you, please consider [buying me a 🍺](https
 
 ## Preview
 
-![](doc/images/screenshot.png)
+![screenshot](doc/images/screenshot.png)
 
 # Prerequisites
 
@@ -139,7 +139,9 @@ Some heat pumps (ROTEX) have an X10A port which connects differently:
 
 ![](doc/images/rotexX10A.png)
 
-Some users reported that the 5V from their ROTEX was not enough to power their ESP32/ESP8266. In this case, use an USB charger to power the ESP32/ESP8266. The 5V from the X10A is then not needed. Whatever you do, **make sure you keep a wire connecting the GND of the ESP32/ESP8266 to the GND pin of the X10A (even if you power your ESP32/ESP8266 with a USB charger)!!**
+Pin 1 (on the left in the picture) is +5v. Some users reported that the 5V from their ROTEX was not strong enough to power their ESP32/ESP8266. In this case, use an USB charger to power the ESP32/ESP8266. The 5V from the X10A is then not needed.
+
+Whatever you do, **make sure you keep a wire connecting the GND of the ESP32/ESP8266 to the GND pin of the X10A (even if you power your ESP32/ESP8266 with a USB charger)!!**
 
 
 5. Cross check twice the connections and turn on your heat pump. Two new entities AlthermaSensor and AlthermaSwitch should appear in Home Assistant. AlthermaSensor holds the values as attributes.
@@ -334,7 +336,7 @@ When put in terms of ESPAltherma variables, the COP can be define as a sensor li
 
 ## Great! I can now monitor my heat pump! Can I change the configuration values too?
 
-Not directly. It might be possible to change registry values using the serial port but I'm not aware of this. If you know, comment on [the dedicated issue](/../../issues/1).
+Not directly. It might be possible to change registry values using the serial port but I'm not aware of this. If you know, comment on [the dedicated issue](https://github.com/raomin/ESPAltherma/issues/1).
 
 However, ESPAltherma, supports an extra GPIO to control a relay that you can plug as *external On/Off thermostat*. See [**Controling your Daikin Altherma heat pump**](#controling-your-daikin-altherma-heat-pump).
 
@@ -404,17 +406,13 @@ If this project is useful to you, and if you want, <b>[you can buy me a beer](ht
 
 You can also [sponsor this project](https://github.com/sponsors/raomin/) (ie regular beers :)) and become an official supporter of ESPAltherma and get your badge on this page!
 
-## ❤ Sponsors ❤
+## ❤ Regular Sponsors ❤
 
-<a href="https://github.com/qris">@qris (Chris Wilson)</a><br/>
-<a href="https://github.com/mauromorello">@mauromorello (Mauro Morello)</a><br/>
-<a href="https://github.com/kloni">@kloni (Tom Klonikowski)</a><br/>
-<a href="https://github.com/tarmor1">@tarmor1</a><br/>
+<a href="https://github.com/gerione">@gerione</a><br/>
+<a href="https://github.com/kloni">@retrack (Antoine Coetsier)</a><br/>
 <a href="https://github.com/EvertJob">@EvertJob (toppe)</a><br/>
 <a href="https://github.com/FusisCaesar">@FusisCaesar</a><br/>
-<a href="https://github.com/freddydeschepper">@freddydeschepper</a><br/>
 <a href="https://github.com/Mychel60">Michael</a><br/>
-<a href="https://github.com/MovingLlama">@MovingLlama</a><br/>
 
 # License
 ESPAltherma is licensed under ![MIT Licence](https://img.shields.io/github/license/raomin/ESPAltherma.svg?style=for-the-badge)

@@ -89,7 +89,7 @@ public:
             break;
         case 105:
             dblData = (double)getSignedValue(data, num, 0) * 0.1;
-            Serial.printf("%f\n", dblData);
+            // Serial.printf("%f\n", dblData);
             break;
         case 106:
             dblData = (double)getSignedValue(data, num, 1) * 0.1;
@@ -237,7 +237,7 @@ public:
 		{
 			int num = data[0] >> 4;
 			int num2 = (int)(data[0] & 15);
-            sprintf(def->asString,"{0:X}{1:X}", num, num2);
+            sprintf(def->asString,"{0:%d}{1:%d}", num, num2);
             return;
 		}
 
@@ -269,21 +269,27 @@ public:
         case 401:
             dblData = (double)getSignedValue(data, num, 0);
             dblData = convertPress2Temp(dblData);
+            break;
         case 402:
             dblData = (double)getSignedValue(data, num, 1);
             dblData = convertPress2Temp(dblData);
+            break;
         case 403:
             dblData = (double)getSignedValue(data, num, 0) / 256.0;
             dblData = convertPress2Temp(dblData);
+            break;
         case 404:
             dblData = (double)getSignedValue(data, num, 1) / 256.0;
             dblData = convertPress2Temp(dblData);
+            break;
         case 405:
             dblData = (double)getSignedValue(data, num, 0) * 0.1;
             dblData = convertPress2Temp(dblData);
+            break;
         case 406:
             dblData = (double)getSignedValue(data, num, 1) * 0.1;
             dblData = convertPress2Temp(dblData);
+            break;
 
         default:
             // conversion is not available
