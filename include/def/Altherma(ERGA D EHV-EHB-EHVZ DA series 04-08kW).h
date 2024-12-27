@@ -90,7 +90,7 @@ LabelDef labelDefs[] = {
 //{0x30,1,152,1,-1,"INV frequency 2 (rps)"},
 //{0x30,0,307,1,-1,"STD Compressor 1"},
 //{0x30,0,306,1,-1,"STD Compressor 2"},
-{0x30,0,211,1,-1,"Fan 1 (10 rpm)"},
+//{0x30,0,211,1,-1,"Fan 1 (10 rpm)"},
 //{0x30,1,211,1,-1,"Fan 2 (step)"},
 //{0x30,0,151,2,-1,"Expansion valve (pls)"},
 //{0x30,2,151,2,-1,"Expansion valve 2 (pls)"},
